@@ -1,0 +1,74 @@
+<html>
+
+<style>
+table,th,td {
+
+border: 1px solid black
+
+}
+
+</style>
+
+<h1>Parquímetro de Petrópolis</h1>
+
+<h2>Valores:</h2>
+
+
+
+<table>
+
+<tr>
+<th> Valor </th>
+<th> Tempo </th>
+</tr>
+
+<tr>
+<td> R$1,00 </td>
+<td> 30 min </td>
+
+<tr>
+<td> R$1,75 </td>
+<td> 60 min </td>
+</tr>
+
+<tr>
+<td> R$3,00 </td>
+<td> 120 min </td>
+</tr>
+
+</table>
+</html>
+</style>
+
+<script>
+
+var minutos1,minutos2,minutos3,valor
+
+var minutos = prompt("Digite a quantidade de minutos que você ficará estacionado");
+
+var valor = Number(prompt("Digite o valor inserido na máquina: "));
+
+if (minutos>=30 && minutos<=59) {
+
+var troco1 = (valor-1.00);
+
+alert("O seu troco é de: " + troco1);
+
+} else if (minutos>=60 && minutos<=119) {
+
+var troco2 = (valor-1.75);
+
+alert("O seu troco é de: " + troco2);
+
+} else if (minutos>=120 && minutos<=120) {
+
+var troco3 = (valor-3.00);
+
+alert("O seu troco é de: " + troco3);
+
+}
+
+
+
+
+</script>

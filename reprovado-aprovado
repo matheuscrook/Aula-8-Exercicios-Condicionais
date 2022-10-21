@@ -1,0 +1,28 @@
+<script>
+
+var aluno = prompt("Digite o nome do aluno: ")
+
+var nota1 = Number(prompt("Digite a nota da primeira prova: "));
+
+var nota2 = Number(prompt("Digite a nota da segunda prova: "));
+
+var nota3 = Number(prompt("Digite a nota da terceira prova: "));
+
+var media = (nota1+nota2+nota3)/3
+
+if (media >= 7.0 && media<=10.00) {
+
+alert(aluno + ", você está aprovado!");
+
+} else if (media >= 6 && media <=6.9) {
+
+alert(aluno + ", você está em recuperação!");
+
+} else if (media <= 6 && media >=0) {
+
+alert(aluno + ", você está reprovado!");
+
+}
+
+
+</script>

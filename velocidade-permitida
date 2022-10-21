@@ -1,0 +1,23 @@
+<script>
+
+var velomax = Number(prompt("Digite a velocidade máxima da estrada"));
+
+var velocondutor = Number(prompt("Digite a velocidade do veículo do condutor"));
+
+var multaleve = (velomax * 20 / 100 + velomax).toFixed(0)
+
+if (velocondutor <= velomax) {
+
+alert("Sem multa.");
+
+} else if (velocondutor <= multaleve) {
+
+alert("Multa leve. ");
+
+} else if (velocondutor > multaleve) {
+
+alert("Multa Grave.");
+
+}
+
+</script>
