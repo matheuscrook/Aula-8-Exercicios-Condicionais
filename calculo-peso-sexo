@@ -6,11 +6,17 @@ var sexo = prompt("Digite o seu sexo: (M) para masculino e (F) para feminino: ")
 
 var altura = Number(prompt("Digite a sua altura, exemplo: 1.80"));
 
+//Condicional IF (se) para definir que se a variavel sexo for igual "M" para masculino, essa condição será aplicada.
+
 if (sexo == "M") {
+
+//Esta variavel é o calculo do peso, que no caso para homem o resultado da multplicação da altura é depois multiplicado por 22, e para mulher 21.
 
 var pesom = 22*(altura*2);
 
 alert("O seu peso ideal é de: " + pesom.toFixed(2) + " kg");
+
+//Condicional Else IF (se não, se) determinando que se a variavel sexo não for "M" mas for "F", então essa condição abaixo é aceita. Ela restringe a variavel sexo só aceitar dois "inputs", no caso dois valores, M ou F.
 
 } else if (sexo == "F") {
 
@@ -21,4 +27,3 @@ alert("O seu peso ideal é de: " + pesof.toFixed(2) + " kg");
 }
 
 </script>
-
