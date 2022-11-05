@@ -42,24 +42,35 @@ border: 1px solid black
 
 <script>
 
+//Declarei as variaveis do código antes, para não me perder
 var minutos1,minutos2,minutos3,valor
 
+//Entrada de Dados
 var minutos = prompt("Digite a quantidade de minutos que você ficará estacionado");
 
 var valor = Number(prompt("Digite o valor inserido na máquina: "));
 
+
+
+//Condição que define que dentro do espaço de tempo de 30 minutos até 59 minutos, o valor será o da tabela. o "&&" dentro do if é para declarar mais de uma condição dentro dela.
+
+//sendo assim, se você for ficar igual ou mais que 30 minutos ou menos ou igual a 59 minutos, o valor da tabela é R$1,00. 
 if (minutos>=30 && minutos<=59) {
 
+//Aqui, o troco funciona subtraindo o valor inserido na máquina menos o valor da tabela, que é R$1,00 por 30 min (que se extende até passar para os 60 min, e ai troca de valor.)
 var troco1 = (valor-1.00);
 
 alert("O seu troco é de: " + troco1);
 
+//Condição que diz que se o primeiro tempo limite de 30 a 59 minutos for excedido e chegar a 60, o valor da tabela é R$1,75.
 } else if (minutos>=60 && minutos<=119) {
 
+//As duas variaveis de troco abaixo seguem o mesmo padrão da primeira acima.
 var troco2 = (valor-1.75);
 
 alert("O seu troco é de: " + troco2);
 
+//Mesma condição das acimas, se o tempo de 60 a 119 minutos for excedido e chegar a 120, o troco será feito com o valor da tabela.
 } else if (minutos>=120 && minutos<=120) {
 
 var troco3 = (valor-3.00);
