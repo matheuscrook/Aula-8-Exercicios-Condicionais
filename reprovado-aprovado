@@ -1,5 +1,6 @@
 <script>
 
+//Entrada de Dados
 var aluno = prompt("Digite o nome do aluno: ")
 
 var nota1 = Number(prompt("Digite a nota da primeira prova: "));
@@ -10,19 +11,26 @@ var nota3 = Number(prompt("Digite a nota da terceira prova: "));
 
 var media = (nota1+nota2+nota3)/3
 
+
+//Condição que determina que se você ficar com uma nota maior ou acima a 7.0, e menor ou igual a 10, você está aprovado.
 if (media >= 7.0 && media<=10.00) {
 
 alert(aluno + ", você está aprovado!");
 
+//Condição que determina que se você ficar com uma nota maior ou igual a 6, e menor ou igual a 6.9, você está em recuperação.
 } else if (media >= 6 && media <=6.9) {
 
 alert(aluno + ", você está em recuperação!");
 
+//Condição que determina que se você ficar com uma nota menor ou igual a 6, e maior ou igual a 0, você está reprovado.
 } else if (media <= 6 && media >=0) {
 
 alert(aluno + ", você está reprovado!");
 
 }
 
+//Agora Matheus, por que você utilizou o "&&" pra adicionar uma condição dentro da condição? Porque, por exemplo no caso da reprovação, sem essa condição eu poderia inserir um valor negativo e seria aceito mesmo assim. Para não ter problemas, eu decidi restringir a condição de 0 até 6.
+
+//Da mesma forma que quis restringir a nota 6 até 6.9, porque automaticamente a próxima nota terá de ser 7.0, e ai será aceito pelo primeiro IF.
 
 </script>
