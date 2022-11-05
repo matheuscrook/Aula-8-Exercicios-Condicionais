@@ -1,9 +1,11 @@
 <script>
 
+//Entrada de Dados
 var sexo = prompt("Digite o seu sexo: (M) para masculino e (F) para feminino");
 
 var salario = Number(prompt("Digite o seu salário bruto: "));
 
+//Condição determinando que se a variavel "sexo" for "M", será aplicado o cálculo abaixo.
 if (sexo = "M") {
 
 var descontom = salario*5/100
@@ -12,6 +14,8 @@ var salarioliquidom = salario-descontom
 
 alert("O seu salário liquido é de: " + "R$" + salarioliquidom.toFixed(2) + " e o desconto é de: " + "R$" + descontom.toFixed(2))
 
+
+//Condição determinando que se a variavel "sexo" for "F", será aplicado o cálculo abaixo.
 } else if (sexo = "F") {
 
 var descontof = salario*3/100
@@ -21,5 +25,8 @@ var salarioliquidof = salario-descontof
 alert("O seu salário liquido é de: " + "R$" + salarioliquidof.toFixed(2) + " e o desconto é de: " + "R$" + descontof.toFixed(2))
 
 }
+
+//o ".toFixed()" serve para restringir as casas decimais e não dar um valor quebrado, lembrando que é 
+//case sensitive! ou seja, o "to" tem que ser minusculo, e o "Fixed" maiusculo.
 
 </script>
