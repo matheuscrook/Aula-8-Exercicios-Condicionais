@@ -52,7 +52,7 @@ var valor = Number(prompt("Digite o valor inserido na máquina: "));
 
 
 
-//Condição que define que dentro do espaço de tempo de 30 minutos até 59 minutos, o valor será o da tabela. o "&&" dentro do if é para declarar mais de uma condição dentro dela.
+//Condição que define que dentro do espaço de tempo de 30 minutos até 59 minutos, o valor será o da tabela.
 
 //sendo assim, se você for ficar mais ou igual que 30 minutos, ou menos ou igual a 59 minutos, o valor da tabela é R$1,00. 
 if (minutos>=30 && minutos<=59) {
@@ -79,7 +79,11 @@ alert("O seu troco é de: " + troco3);
 
 }
 
+//Agora Matheus, por que você adicionou o "&&" para adicionar uma condição dentro da condição? Bom, assim eu consigo restringir o tempo de estadia de um valor até outro.
+//Automaticamente, o próximo valor que estiver fora da condição, será aceita por outro IF. (No caso else if)
 
+//Exemplo: de 30 a 59 minutos, o valor da tabela é R$1,00. A partir do momento que você escolhe ficar 60 minutos ou mais, o troco se submete ao novo valor da tabela,
+//que é de R$1,75.
 
 
 </script>
