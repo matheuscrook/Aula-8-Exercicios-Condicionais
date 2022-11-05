@@ -1,3 +1,32 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@matheuscrook 
+matheuscrook
+/
+Aula-8-Exercicios-Condicionais
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Aula-8-Exercicios-Condicionais/parquimetro
+@matheuscrook
+matheuscrook Update parquimetro
+Latest commit 13753f9 1 minute ago
+ History
+ 1 contributor
+85 lines (50 sloc)  1.77 KB
+
 <html>
 
 <style>
@@ -54,7 +83,7 @@ var valor = Number(prompt("Digite o valor inserido na máquina: "));
 
 //Condição que define que dentro do espaço de tempo de 30 minutos até 59 minutos, o valor será o da tabela. o "&&" dentro do if é para declarar mais de uma condição dentro dela.
 
-//sendo assim, se você for ficar igual ou mais que 30 minutos ou menos ou igual a 59 minutos, o valor da tabela é R$1,00. 
+//sendo assim, se você for ficar mais ou igual que 30 minutos, ou menos ou igual a 59 minutos, o valor da tabela é R$1,00. 
 if (minutos>=30 && minutos<=59) {
 
 //Aqui, o troco funciona subtraindo o valor inserido na máquina menos o valor da tabela, que é R$1,00 por 30 min (que se extende até passar para os 60 min, e ai troca de valor.)
