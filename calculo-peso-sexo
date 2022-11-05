@@ -26,4 +26,7 @@ alert("O seu peso ideal é de: " + pesof.toFixed(2) + " kg");
 
 }
 
+//o ".toFixed()" serve para restringir as casas decimais e não dar um valor quebrado, lembrando que é 
+//case sensitive! ou seja, o "to" tem que ser minusculo, e o "Fixed" maiusculo.
+
 </script>
